@@ -26,6 +26,9 @@ public class SampleTest {
 			} catch (IllegalArgumentException e) {
 			}
 		}
+		
+		@Test
+		@DisplayName("引数エラー")
 		void fail2() {
 			assertThrows(IllegalArgumentException.class, () -> Sample.getColor(99));
 		}
